@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position:absolute;
+    height:fit-content;
+    width: 100%;
+    top:0;
+    text-align:left;
+    background-color: rgb(48, 48, 65);
+    color:aquamarine;
+}
+
+h1{
+    background-color: rgb(190, 241, 224);
+    color: rgb(48, 48, 65);
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 5px;
+    width:fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav{
+    position: absolute;
+    top:12px;
+    padding: 15px;
+    right: 0;
+    width: 65%;
+    float: right;
+    font-size: 15px;
+    text-align: right;
+}
+
+nav a{
+    color: aquamarine;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.hero-banner{
+    margin-top:75px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-blue-technology-web-banner-image_122453.jpg);
+    height:200px;
+    width: 100%;
+    text-align: right;
+}
+#hero-banner{
+    position:relative;
+    top:150px;
+    right: 50px;
+}
+
+.page-wrapper{
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height:200vh;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 80% 10% ;
+    grid-template-areas:
+    "about"
+    "work"
+    "contact";
+}
+
+#about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 100% ;
+    grid-template-areas:
+    "abouttitle abouttext";
+    position: relative;
+}
+#work{
+    grid-area: work;
+    display: grid;
+    grid-template-columns: 20% 40% 40% ;
+    grid-template-rows: 50% 25% 25% ;
+    grid-template-areas:
+    "worktitle prework prework"
+    "worktitle mini1 oh1"
+    "worktitle mini2 oh2";
+}
+#contact{
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 100% ;
+    grid-template-areas:
+    "contacttitle contacttext"
+    ;
+}
+
+#worktitle{
+    grid-area: worktitle;
+}
+#prework{
+    position:relative;
+    grid-area: prework;
+    background-image: url(../Images/Screenshot\ 2022-12-19\ at\ 22.24.45.png);
+}
+#preworklink {
+    position: absolute;
+    width: 100%;    /* width of the logo */
+    height: 100%;   /* height of the logo */
+    top: 0; left: 0; /* top-left corner of logo */
+    border: 0;
+    float: left;
+}
+#mini1{
+    position: relative;
+    grid-area: mini1;
+    background-image: url(../Images/Screenshot\ 2022-12-19\ at\ 22.25.10.png);
+}
+#mini1link {
+    position: absolute;
+    width: 100%;    /* width of the logo */
+    height: 100%;   /* height of the logo */
+    top: 0; left: 0; /* top-left corner of logo */
+    border: 0;
+    float: left;
+}
+#oh1{
+    position: relative;
+    grid-area: oh1;
+    background-image: url(../Images/Screenshot\ 2022-12-19\ at\ 22.25.21.png);
+}
+#oh1link {
+    position: absolute;
+    width: 100%;    /* width of the logo */
+    height: 100%;   /* height of the logo */
+    top: 0; left: 0; /* top-left corner of logo */
+    border: 0;
+    float: left;
+}
+#mini2{
+    grid-area: mini2;
+}
+#oh2{
+    grid-area: oh2;
+}
+.portfolio-section {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border: 5px solid rgb(190, 241, 224);
+}
+.heading {
+    background-color:rgb(190, 241, 224);
+    height:fit-content;
+    width: 45%;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#abouttitle, #worktitle, #contacttitle {
+    border-right: 5px solid rgb(190, 241, 224) ;
+    margin: 10px;
+    text-align: right;
+    padding: 10px;
+}
+
+#abouttitle{
+    grid-area: abouttitle;
+}
+#abouttext{
+    position: absolute;
+    bottom:5px;
+    right:5px;
+    grid-area: abouttext;
+    margin:10px;
+}
+
+
+#contacttitle{
+    grid-area: contacttitle;
+}
+#contacttext{
+    grid-area: contacttext;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+body{
+    background-color: lightgray;
+    margin:0;
+}
