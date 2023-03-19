@@ -26,8 +26,8 @@ Navigate through the three main sections using the navigation bar at the top
 Click any of the pictures to link to the website hosted on github
 Click on contacts links to get conatct details
 
-![screenshot of the top of the page showing the navbar, profile pic, about me section and main projects card]()
-![screenshot of 4 other project cards and the contact section with working links]()
+![screenshot of the top of the page showing the navbar, profile pic, about me section and main projects card](https://github.com/JAlexander94/Portfolio-Page-OH2/blob/main/assets/Images/Screenshot%202023-03-19%20at%2019.43.47.png)
+![screenshot of 4 other project cards and the contact section with working links](https://github.com/JAlexander94/Portfolio-Page-OH2/blob/main/assets/Images/Screenshot%202023-03-19%20at%2019.44.14.png)
 
 ## License
 
